@@ -16,8 +16,6 @@ The current notebook focuses on a single snapshot of the playlist (around 20 Nov
 
 ## Project Overview
 
-Main goals:
-
 1. *Collect data* from the Spotify Web API for a specific playlist.
 2. *Enrich & clean* data:
    - Normalize / simplify Thai-related genres (e.g. thai pop, t-pop, luk thung, thai indie pop).
@@ -40,8 +38,6 @@ Main goals:
 ## Data Pipeline
 
 ### 1. Data Collection
-
-Using spotipy and the *Client Credentials* flow:
 
 - Authenticate with Spotify using:
   - client_id = "YOUR_CLIENT_ID"
@@ -88,8 +84,6 @@ Two main derived DataFrames are used:
 
 ### Descriptive Statistics
 
-The notebook prints:
-
 - Track popularity summary (mean, median, standard deviation, range).
 - Artist metrics:
   - Average artist popularity
@@ -102,14 +96,11 @@ The notebook prints:
 
 ### Key Insights
 
-Examples of printed insights:
-
-- *Top 5 most popular tracks* in the playlist.
-- *Top 5 artists by followers* (with follower counts and popularity).
-- *Collaboration stats*:
-  - Solo tracks vs. collaborative tracks (2+ artists).
-- *Genre performance*:
-  - Average track popularity by genre and track counts per genre.
+- The most popular tracks include **“ที่คั่นหนังสือ”**, **“wanna be yours”**, and **“ที่เดิม”**.  
+- Artists with the highest followers are **Violette Wautier**, **BOWKYLION**, and **PUN**.  
+- Most tracks are **solo**, but some are **collaborations with 2+ artists**.  
+- The **T-POP** genre still favors **ballads** and **emotional pop**, while **Indie Pop/hybrid genres** are emerging.  
+- **Track popularity** does not depend solely on followers; it is also influenced by **artist popularity**, **track freshness**, and **recent engagement**.
 
 ### Visualizations
 
